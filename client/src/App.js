@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Lobby from "./pages/Lobby";
 import GameBoard from "./pages/GameBoard";
 import io from "socket.io-client";
-const socket = io.connect("https://tic-tac-toe-socket-api.vercel.app");
+const socket = io.connect("https://tic-tac-toe-socket-api.vercel.app", {
+  withCredentials: true, // Send credentials
+});
 
 function App() {
   return (
