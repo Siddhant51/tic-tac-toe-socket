@@ -39,10 +39,7 @@ const Room = mongoose.model("Room", RoomSchema);
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  cors: {
-    origin: "https://tic-tac-toe-socket-sid.vercel.app", // Replace with your client-side URL
-    methods: ["GET", "POST"],
-  },
+  cors: corsOptions,
 });
 
 io.on("connection", (socket) => {
