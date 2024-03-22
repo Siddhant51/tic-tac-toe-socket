@@ -1,0 +1,154 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.App{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #25beaa;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: .1rem;
+  align-items: center;
+  color: #475569;
+}
+
+.light{
+  color: #99f6e4;
+}
+.dark{
+  color: #475569;
+}
+
+.game-board {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #25beaa;
+}
+
+.top{
+  padding: 10px;
+}
+
+.score{
+  text-align: center;
+}
+
+.message{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.horizontal{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%;
+  /* border: 1px solid red; */
+  background-color: #0d9488;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #25beaa;
+}
+
+.cell:hover{
+  transition: all 0.1s;
+  filter: brightness(0.9);
+}
+
+.cell-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+}
+
+.bottom{
+  margin-top: 10px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  border: 5px solid #0d9488;
+  background-color: transparent;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  color: #475569;
+
+}
+button:hover{
+  transition: all 0.1s;
+  color: #99f6e4;
+}
+
+.lobby{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 300px;
+  border: 7px solid #0d9488;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.lobby h1{
+  text-align: center;
+  padding: 10px;
+  color: #475569;
+}
+
+.inputs{
+  display: flex;
+  margin: 5px;
+}
+
+input{
+  /* margin-right: 5px; */
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  font-size: large;
+  color: #99f6e4;
+  font-weight:bold;
+  letter-spacing: .1rem;
+  border: 5px solid #0d9488;
+}
+input::placeholder{
+  /* color: #475569; */
+  color: #99f6e4;
+}
+
+.copy{
+  font-size: x-large;
+}
+.generate{
+  font-size:x-large;
+}
