@@ -7,7 +7,7 @@ require("dotenv").config();
 
 // Configure CORS more specifically
 const corsOptions = {
-  origin: "http://localhost:3000", // Replace with your client-side URL
+  origin: "https://tic-tac-toe-socket-sid.vercel.app", // Replace with your client-side URL
   methods: ["GET", "POST"],
 };
 app.use(cors(corsOptions));
