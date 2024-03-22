@@ -40,7 +40,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // Replace with your client-side URL
+    origin: "https://tic-tac-toe-socket-sid.vercel.app/", // Replace with your client-side URL
     methods: ["GET", "POST"],
   },
 });
